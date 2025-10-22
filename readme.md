@@ -125,19 +125,6 @@ This project README is designed as a step-by-step learning guide and checklist f
 
 ---
 
-## 3. Project Structure & Gradle
-
-**Directory Layout:**
-```
-src/main/java/com/example/taskmanager/controller/service/repository/model/dto/config/exception/resources/application.propertiestest/java/com/example/taskmanager/service/controller/
-```
-
-
-**Gradle:**
-- Explore `build.gradle` for plugins, dependencies, tasks
-
----
-
 ## 4. Domain & OOP Design
 
 - [ ] Define `Task` and `User` models using JPA (`@Entity`, `@Id`)
@@ -215,18 +202,6 @@ src/main/java/com/example/taskmanager/controller/service/repository/model/dto/co
 - [ ] Transaction management in service layer (`@Transactional`)
 - [ ] Proper error handling and logging
 - [ ] Small, meaningful Git commits
-
----
-
-## Example Endpoint List
-
-| Method | Endpoint             | Description         |
-|--------|----------------------|--------------------|
-| POST   | /api/tasks           | Create new task    |
-| GET    | /api/tasks/{id}      | Get task by ID     |
-| PUT    | /api/tasks/{id}      | Update task        |
-| DELETE | /api/tasks/{id}      | Delete task        |
-| GET    | /api/tasks           | List all tasks     |
 
 ---
 

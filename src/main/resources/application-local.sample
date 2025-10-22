@@ -1,0 +1,4 @@
+api:
+  external:
+    url: "https://api.api-ninjas.com/v1/quotes"
+    api-key: "+-API-KEY-HERE-+"

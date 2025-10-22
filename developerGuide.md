@@ -2,22 +2,23 @@
 
 ### Endpoints
 
-| Method | Endpoint                                   | Description                        |
-|--------|--------------------------------------------|------------------------------------|
-| POST   | `/api/users`                               | Add new user                       |
-| GET    | `/api/users`                               | List all users                     |
-| GET    | `/api/users/{id}`                          | Get user by ID                     |
-| PUT    | `/api/users/{id}`                          | Update user details                |
-| DELETE | `/api/users/{id}`                          | Remove user                        |
-| POST   | `/api/tasks`                               | Add new task                       |
-| GET    | `/api/tasks`                               | List all tasks                     |
-| GET    | `/api/tasks/{id}`                          | Get task by ID                     |
-| PUT    | `/api/tasks/{id}`                          | Update task details                |
-| DELETE | `/api/tasks/{id}`                          | Delete task                        |
-| POST   | `/api/tasks/{taskId}/assign/{userId}`      | Assign task to user                |
-| GET    | `/api/users/{id}/tasks`                    | List tasks assigned to a user      |
-| PUT    | `/api/tasks/{taskId}/unassign`             | Unassign task from user (optional) |
-| GET    | `/api/tasks/{id}/user`                     | Get user assigned to a task        |
+| Method | Endpoint                                | Description                        |
+|--------|-----------------------------------------|------------------------------------|
+| POST   | `/api/users`                            | Add new user                       |
+| GET    | `/api/users`                            | List all users                     |
+| GET    | `/api/users/{id}`                       | Get user by ID                     |
+| PUT    | `/api/users/{id}`                       | Update user details                |
+| DELETE | `/api/users/{id}`                       | Remove user                        |
+| GET    | `/api/users/{id}/tasks`                 | List tasks assigned to a user      |
+| POST   | `/api/tasks`                            | Add new task                       |
+| GET    | `/api/tasks`                            | List all tasks                     |
+| GET    | `/api/tasks/{id}`                       | Get task by ID                     |
+| PUT    | `/api/tasks/{id}`                       | Update task details                |
+| DELETE | `/api/tasks/{id}`                       | Delete task                        |
+| POST   | `/api/tasks/{taskId}/assign/{userId}`   | Assign task to user                |
+| GET    | `/api/external/quotes`                  | External API to get quotes         |
+|--------| --------------------------------------- |------------------------------------|
+
 
 ---
 
