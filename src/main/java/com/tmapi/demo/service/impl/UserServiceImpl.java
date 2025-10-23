@@ -1,5 +1,6 @@
 package com.tmapi.demo.service.impl;
 
+import com.tmapi.demo.exception.ResourceNotFoundException;
 import com.tmapi.demo.model.Task;
 import com.tmapi.demo.model.User;
 import com.tmapi.demo.repository.TaskRepository;
@@ -30,7 +31,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserById(Long id) {
-        return userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
+        return userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("User not found with id: "+id));
     }
 
     @Override
