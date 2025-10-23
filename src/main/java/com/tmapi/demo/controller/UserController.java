@@ -5,10 +5,12 @@ import com.tmapi.demo.model.User;
 import com.tmapi.demo.model.Task;
 import com.tmapi.demo.service.interfaces.UserService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor // this we are doing coz spring automatically injects the userServivce bean
@@ -18,6 +20,7 @@ public class UserController {
 
     @PostMapping
     public User addUser(@RequestBody User user) {
+        log.info("Adding new user: {}", user.getName());
         return userService.createUser(user);
     }
 
